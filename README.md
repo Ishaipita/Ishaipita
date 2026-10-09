@@ -1,60 +1,85 @@
 <div align="center">
 
-# Ishai Pita
+<img src="./assets/systems-banner.svg" width="100%" alt="Ishai Pita — Systems That Finish The Work. Architectural network graphic." />
 
-### AI Systems Architect · Agentic Workflows · Cloud Infrastructure
+### FOUNDER / SYSTEMS ARCHITECT / PRODUCT BUILDER
 
-**Building dependable systems that turn intent into verified execution.**
+**Building RACAI — an evolving company for intelligent systems, creative technology and dependable execution.**
 
-[**RACAI**](https://rac-ai.com/) · [**GitHub**](https://github.com/Ishaipita)
+[**Explore RACAI ↗**](https://rac-ai.com/) &nbsp; · &nbsp; [**Engineering repositories ↗**](https://github.com/Ishaipita?tab=repositories)
 
 </div>
 
 ---
 
-## What I build
+## 01 / THE THESIS
 
-I design and integrate AI-powered operating systems: governed agent workflows, multi-tenant applications, cloud automation, product experiences and the infrastructure connecting them.
+> **Generating an answer is easy. Carrying responsibility from an objective to a verified outcome is the hard part.**
 
-My focus isn't simply making an AI agent respond. It's making complex work **reliable, observable and accountable** — from the initial objective to an independently verifiable result.
+I work across software, AI, infrastructure, operations and creative production. What connects the work is a commitment to systems that stay useful **after the first demo**: measurable, maintainable, appropriately governed and designed around real people.
 
-`Goal → Plan → Authorized Action → Evidence → Outcome`
+**RACAI is the long-term umbrella for turning this accumulated work into dependable, commercially useful products and services.** Different projects have different owners, histories and maturity levels. Not every experiment is currently a RACAI product.
 
-## Selected engineering work
+## 02 / A BODY OF WORK
 
-| Project | Scope | Status |
+| Practice | Selected work | What it demonstrates |
 |:--|:--|:--|
-| **RACAI Operator** | Cloudflare Workers, D1, Telegram, policy gates, audit trails, revenue events and founder operations | Active development; core code private |
-| **Control-Room** | Multi-tenant agent orchestration, scoped memory, task queues, token budgets, human approvals and a gated executor | Historical AWS-based implementation; modernization in progress |
-| **B-Sure** | Five-stage AI-assisted SME credit-underwriting research prototype, with streamed progress and explainable outputs | Proof of concept — not a deployed banking product |
-| **NYRA** | Python-based visual identity production tooling, canonical references and cost-ledger controls | Private creative engineering project |
+| **Operating systems** | RACAI Operator / Control-Room | Agent orchestration, scoped memory, queues, approval gates, audit trails and execution evidence |
+| **Cloud & infrastructure** | AWS-era systems → Cloudflare Workers + D1 | Cloud operations, migrations, policy boundaries and resilient event-driven architecture |
+| **Applied AI** | B-Sure | Five-stage credit-analysis research prototype with explainable outputs and human review |
+| **Creative systems** | NYRA / AI production tooling | Canonical visual identity workflows, editorial automation, asset provenance and spending controls |
+| **Autonomous experimentation** | Jarvis | Historical specialist-agent coordination, scheduling, queues and research tooling; financial automation is not offered as a live service |
+| **Mathematical exploration** | Theta–Erdős research | Symbolic derivation, numerical checking and explicit levels of evidence |
 
-These are different projects at different maturity levels. A repository, prototype, test or deployment does not by itself establish commercial adoption or production readiness.
+<sub>Projects above represent different development stages. A prototype is not a production deployment, and an internal tool is not evidence of a paying customer. Commercial availability and ownership are not implied by inclusion.</sub>
 
-## Engineering principles
+## 03 / ENGINEERING PRINCIPLES
 
-- **Reuse before rebuild.** Audit existing systems and preserve working components.
-- **Human control by design.** Risky or irreversible actions require appropriate authorization.
-- **Evidence over status messages.** A committed change isn't a deployment; a deployment isn't customer acceptance.
-- **Security and tenant isolation.** Scope access, minimize privileges and keep credentials out of repositories.
-- **Measure outcomes.** Delivery quality, operating time, cost and real customer value matter more than agent count.
+**01 — Reuse before rebuild.** Start with the real code, prior decisions, tests and operational history.
 
-## Technologies I've worked with
+**02 — Separate authority from capability.** An AI agent proposing a change does not authorize that change.
 
-**TypeScript / JavaScript · Python · Node.js · PostgreSQL · Redis · Cloudflare Workers / D1 · AWS · GitHub Actions · Telegram integrations**
+**03 — Measure what happened.** A commit is not a deployment; a deployment is not customer acceptance; a test checkout is not revenue.
 
-## Current direction
+**04 — Design for recovery.** Durable state, reproducible releases, auditable action and clear rollback.
 
-At **RACAI**, I'm working on the problem of execution continuity: keeping goals, decisions, tools, delegated work and verified outcomes connected across systems.
+**05 — Make the product worth returning to.** Less coordination burden, better decisions and verifiable outcomes.
 
-The long-term ambition is to make capable automation practical for founders and teams. The immediate priority is proving reliability and business value in real delivery workflows.
+## 04 / HOW THE SYSTEMS FIT
+
+```text
+OWNER / TEAM GOAL
+       │
+       ▼
+ CONTEXT + PRIORITIES
+       │
+       ▼
+ RESPONSIBILITY + APPROVAL
+       │
+       ▼
+ CONNECTED WORKFLOWS
+       │
+       ▼
+ PROVIDER EVIDENCE
+       │
+       ▼
+ VERIFIED OUTCOME ───► LEARNING / NEXT ACTION
+```
+
+This is the architectural direction, not a claim that every connection in the diagram is live.
+
+## 05 / TOOLS & DOMAINS
+
+`Python` · `TypeScript` · `Node.js` · `PostgreSQL` · `Redis` · `Cloudflare Workers` · `D1` · `AWS` · `GitHub Actions` · `Telegram` · `AI orchestration` · `Product engineering`
 
 ---
 
 <div align="center">
 
-**Build deliberately. Verify the outcome.**
+### MAKE AMBITION OPERABLE.
 
-[Explore RACAI](https://rac-ai.com/) · [View repositories](https://github.com/Ishaipita?tab=repositories)
+**RACAI — Ambition, made real.**
+
+[Company ↗](https://rac-ai.com/) &nbsp; · &nbsp; [Source and projects ↗](https://github.com/Ishaipita?tab=repositories)
 
 </div>
