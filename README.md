@@ -33,6 +33,8 @@ I work across software, AI, infrastructure, operations and creative production. 
 
 <sub>Projects above represent different development stages. A prototype is not a production deployment, and an internal tool is not evidence of a paying customer. Commercial availability and ownership are not implied by inclusion.</sub>
 
+**Engineering deep dive:** [Control-Room — governed AI execution, architecture & evidence →](./case-studies/control-room.md)
+
 ## 03 / ENGINEERING PRINCIPLES
 
 **01 — Reuse before rebuild.** Start with the real code, prior decisions, tests and operational history.
