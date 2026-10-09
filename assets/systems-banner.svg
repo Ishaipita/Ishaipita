@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc">
+<title id="title">Ishai Pita — Systems that finish the work</title>
+<desc id="desc">Editorial black and ivory composition with a system diagram and architectural geometry.</desc>
+<rect width="1200" height="450" fill="#111315"/>
+<g fill="none" stroke="#393D3F" stroke-width="1"><path d="M40 42H1160M40 408H1160M40 42V408M1160 42V408"/><path d="M768 42V408M864 42V408M960 42V408M1056 42V408"/><path d="M768 133H1160M768 225H1160M768 317H1160"/></g>
+<g stroke="#EEEAE1" fill="none" stroke-width="2"><path d="M814 363V271H912V179H1010V88"/><path d="M814 88H912V179H1010V271H1108"/><path d="M814 271L912 363L1010 271"/></g>
+<g fill="#EEEAE1"><circle cx="814" cy="363" r="5"/><circle cx="912" cy="179" r="5"/><circle cx="1010" cy="88" r="5"/><circle cx="814" cy="88" r="5"/><circle cx="1010" cy="271" r="5"/></g>
+<g font-family="Arial,Helvetica,sans-serif"><text x="70" y="90" fill="#B9B8B1" font-size="15" letter-spacing="3">ISHAI PITA / SYSTEMS ARCHITECTURE</text><text x="67" y="199" fill="#F3F0E8" font-size="61" font-weight="700" letter-spacing="-2">SYSTEMS THAT</text><text x="67" y="267" fill="#F3F0E8" font-size="61" font-weight="700" letter-spacing="-2">FINISH THE WORK.</text><text x="70" y="340" fill="#B9B8B1" font-size="20">AI systems / orchestration / product engineering</text><text x="70" y="389" fill="#E0DDD4" font-size="15" letter-spacing="2">RACAI — AMBITION, MADE REAL.</text></g>
+</svg>
