@@ -18,7 +18,7 @@
 
 I work across software, AI, infrastructure, operations and creative production. What connects the work is a commitment to systems that stay useful **after the first demo**: measurable, maintainable, appropriately governed and designed around real people.
 
-**RACAI is the long-term umbrella for turning this accumulated work into dependable, commercially useful products and services.** Different projects have different owners, histories and maturity levels. Not every experiment is currently a RACAI product.
+**RACAI is the long-term umbrella for turning this accumulated work into dependable, commercially useful products and services.** Current product work explores evidence-based delivery, accountable automation and practical digital services, with customer value and operating reliability as the measures of success. Different projects have different owners, histories and maturity levels. Not every experiment is currently a RACAI product.
 
 ## 02 / A BODY OF WORK
 
