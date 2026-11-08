@@ -13,21 +13,21 @@
 
 I build software at the intersection of AI, backend systems and products. Much of my work has focused on a practical question: **what does it take for software to carry work through to a result that can be checked?**
 
-That has meant building, revising and sometimes replacing systems for agent coordination, persistent state, permissions, external tools and operational review. RACAI is my continuing work in this area.
+I have developed systems for agent coordination, persistent state, permissions, external tools and operational review. RACAI is my continuing work in this area.
 
 ## Selected work
 
 ### [RACAI Operator](./case-studies/racai-operator.md)
 **Internal operating software · TypeScript, Cloudflare Workers, D1**
 
-Work intake, persistent state, approval flows, audit records and scheduled operations. The project has evolved through several deployments and release iterations.
+Work intake, persistent state, approval flows, audit records and scheduled operations. The work combines application engineering, release discipline and operational design.
 
 [Architecture and implementation notes →](./case-studies/racai-operator.md)
 
 ### [Control-Room](./case-studies/control-room.md)
 **Agent execution and governance · Node.js, PostgreSQL, Redis**
 
-A historical multi-tenant system that explored a bounded plan–act–verify process, scoped memory and a separate approval-gated executor for external actions.
+A multi-tenant engineering project with a bounded plan–act–verify process, scoped memory and a separate approval-gated executor for external actions.
 
 [Engineering case study →](./case-studies/control-room.md)
 
@@ -48,15 +48,15 @@ A reference-based production workflow with versioned assets, spending controls a
 
 **Theta–Erdős** — symbolic and numerical exploration using independent verification and explicit confidence classifications.
 
-These are exploratory or historical projects, not additional production products.
+
 
 </details>
 
 ## Engineering approach
 
-I favor small, testable execution paths over broad automation claims. A model can suggest an action; the software still needs to establish authority, record what happened and handle failure. A successful test is different from a successful deployment, and neither automatically demonstrates a useful outcome.
+My approach combines practical product development with disciplined systems engineering: clear state transitions, explicit authorization, testable execution paths and evidence-based review.
 
-The case studies show selected implementation decisions and their limitations. Source repositories for internal systems remain private.
+The case studies document selected architectural decisions and implementation approaches. Internal source repositories remain private.
 
 ## Technologies
 
