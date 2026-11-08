@@ -2,86 +2,76 @@
 
 <img src="./assets/systems-banner.svg" width="100%" alt="Ishai Pita — Systems That Finish The Work. Architectural network graphic." />
 
-### FOUNDER / SYSTEMS ARCHITECT / PRODUCT BUILDER
+### ISHAI CHERTKOFF
+**Founder · Systems Architect · Product Engineer**
 
-**Building RACAI — an evolving company for intelligent systems, creative technology and dependable execution.**
-
-[**Explore RACAI ↗**](https://rac-ai.com/) &nbsp; · &nbsp; [**Engineering repositories ↗**](https://github.com/Ishaipita?tab=repositories)
+Building [RACAI](https://rac-ai.com/) — intelligent software, operating systems and creative technology.
 
 </div>
 
 ---
 
-## 01 / THE THESIS
+## 01 / FOCUS
 
-> **Generating an answer is easy. Carrying responsibility from an objective to a verified outcome is the hard part.**
+I design and build software systems across AI, backend infrastructure and product engineering. My work has moved from experimental agent coordination to a more difficult engineering question: how do you keep actions controlled, state consistent and outcomes verifiable when software operates across models, tools and external services?
 
-I work across software, AI, infrastructure, operations and creative production. What connects the work is a commitment to systems that stay useful **after the first demo**: measurable, maintainable, appropriately governed and designed around real people.
+RACAI is where I develop and apply that work.
 
-**RACAI is the long-term umbrella for turning this accumulated work into dependable, commercially useful products and services.** Current product work explores evidence-based delivery, accountable automation and practical digital services, with customer value and operating reliability as the measures of success. Different projects have different owners, histories and maturity levels. Not every experiment is currently a RACAI product.
+## 02 / SELECTED ENGINEERING WORK
 
-## 02 / A BODY OF WORK
+### RACAI Operator
+**Cloudflare Workers · D1 · TypeScript · Telegram / web interfaces**
 
-| Practice | Selected work | What it demonstrates |
+An evolving internal operating system for work intake, persistent business state and controlled execution. The implementation includes proposal/confirmation flows, approval boundaries, audit records, scheduled processes and deployment safeguards.
+
+**Engineering focus:** state transitions, access control, recovery and operational evidence.
+
+### Control-Room
+**Node.js · PostgreSQL · Redis · AI orchestration**
+
+A historical multi-tenant implementation for coordinating AI-assisted work. Built around a bounded plan–act–verify loop, scoped memory, sequential queues and separately authorized external actions.
+
+The executor distinguishes an agent's proposal from permission to act. Approved actions are checked against an allowlist and claimed transactionally before execution. This prevents competing workers from intentionally executing the same proposal twice, but does not by itself establish exactly-once delivery to external services.
+
+[Read the Control-Room engineering case study →](./case-studies/control-room.md)
+
+### B-Sure
+**Applied AI · Financial analysis · Human review**
+
+A proof of concept for a five-stage credit-analysis workflow: extract, analyze, enrich, score and formulate follow-up questions. The interface exposes reasoning and score factors for human review rather than treating model output as a final lending decision.
+
+### NYRA
+**Generative media · Python · Asset provenance · Cost controls**
+
+A reproducible visual production workflow using a canonical reference asset, versioned manifests, spend tracking and preflight checks. Iterative failures informed additional prompt constraints and safeguards.
+
+## 03 / ENGINEERING DECISIONS
+
+| Problem | Approach | Boundary |
 |:--|:--|:--|
-| **Operating systems** | RACAI Operator / Control-Room | Agent orchestration, scoped memory, queues, approval gates, audit trails and execution evidence |
-| **Cloud & infrastructure** | AWS-era systems → Cloudflare Workers + D1 | Cloud operations, migrations, policy boundaries and resilient event-driven architecture |
-| **Applied AI** | B-Sure | Five-stage credit-analysis research prototype with explainable outputs and human review |
-| **Creative systems** | NYRA / AI production tooling | Canonical visual identity workflows, editorial automation, asset provenance and spending controls |
-| **Autonomous experimentation** | Jarvis | Historical specialist-agent coordination, scheduling, queues and research tooling; financial automation is not offered as a live service |
-| **Mathematical exploration** | Theta–Erdős research | Symbolic derivation, numerical checking and explicit levels of evidence |
+| Model output is not authorization | Separate planning and proposals from an approval-gated executor | A human still owns consequential decisions |
+| Agent context is not durable state | Persist structured state, scoped memory and audit events | Storage integrity is not proof of real-world success |
+| Retries can repeat external effects | Atomic claims, bounded attempts and explicit failure states | External exactly-once delivery requires provider-level guarantees |
+| A release can appear successful without being live | Distinguish code, tests, deployment evidence and observed behavior | Production and commercial outcomes require separate verification |
 
-<sub>Projects above represent different development stages. A prototype is not a production deployment, and an internal tool is not evidence of a paying customer. Commercial availability and ownership are not implied by inclusion.</sub>
+## 04 / OTHER EXPLORATIONS
 
-**Engineering deep dive:** [Control-Room — governed AI execution, architecture & evidence →](./case-studies/control-room.md)
+**Jarvis** — earlier experiments in specialist-agent coordination and financial research tooling. Historical work, not a live trading service.
 
-## 03 / ENGINEERING PRINCIPLES
+**Theta–Erdős research** — symbolic and numerical exploration with explicit evidence classifications and independent verification procedures.
 
-**01 — Reuse before rebuild.** Start with the real code, prior decisions, tests and operational history.
+These projects span different stages of development. The linked case study documents a historical implementation; current RACAI capabilities are not presented as equivalent to every historical prototype.
 
-**02 — Separate authority from capability.** An AI agent proposing a change does not authorize that change.
+## 05 / WORKING STACK
 
-**03 — Measure what happened.** A commit is not a deployment; a deployment is not customer acceptance; a test checkout is not revenue.
-
-**04 — Design for recovery.** Durable state, reproducible releases, auditable action and clear rollback.
-
-**05 — Make the product worth returning to.** Less coordination burden, better decisions and verifiable outcomes.
-
-## 04 / HOW THE SYSTEMS FIT
-
-```text
-OWNER / TEAM GOAL
-       │
-       ▼
- CONTEXT + PRIORITIES
-       │
-       ▼
- RESPONSIBILITY + APPROVAL
-       │
-       ▼
- CONNECTED WORKFLOWS
-       │
-       ▼
- PROVIDER EVIDENCE
-       │
-       ▼
- VERIFIED OUTCOME ───► LEARNING / NEXT ACTION
-```
-
-This is the architectural direction, not a claim that every connection in the diagram is live.
-
-## 05 / TOOLS & DOMAINS
-
-`Python` · `TypeScript` · `Node.js` · `PostgreSQL` · `Redis` · `Cloudflare Workers` · `D1` · `AWS` · `GitHub Actions` · `Telegram` · `AI orchestration` · `Product engineering`
+`TypeScript` · `JavaScript` · `Python` · `Node.js` · `PostgreSQL` · `Redis` · `Cloudflare Workers` · `D1` · `AWS` · `GitHub Actions` · `REST APIs` · `AI systems`
 
 ---
 
 <div align="center">
 
-### MAKE AMBITION OPERABLE.
-
 **RACAI — Ambition, made real.**
 
-[Company ↗](https://rac-ai.com/) &nbsp; · &nbsp; [Source and projects ↗](https://github.com/Ishaipita?tab=repositories)
+[Company](https://rac-ai.com/) · [Engineering portfolio](./case-studies/control-room.md) · [GitHub](https://github.com/Ishaipita)
 
 </div>
