@@ -1,72 +1,65 @@
-# CONTROL-ROOM
-## Engineering case study — governed AI execution
+# Control-Room
+*Engineering case study · Historical implementation*
 
-**Discipline:** Multi-tenant systems · agent orchestration · operational safeguards  
-**Maturity:** Historical working implementation, subsequently undergoing modernization. Not presented as a currently available public SaaS.
+**Stack:** Node.js / Express, PostgreSQL, Redis, Python, AI model tooling  
+**Scope:** Multi-tenant task processing and operator-controlled agent execution
 
-> **The problem:** How can an operator coordinate AI specialists while keeping customer boundaries, cost controls, and irreversible actions under human control?
+[← Portfolio](../README.md)
 
-### Two separate execution planes
+## The problem
 
-| Plane | Core flow | Safety boundary |
-|:--|:--|:--|
-| Client portal | Scoped user → task queue → sequential worker → agent → review | Tenant-specific access and task budget checks |
-| Operator | Goal → plan → bounded tools → verify → propose | External actions require separate human approval |
+An AI agent can propose an action, but that does not mean it should be allowed to perform it. The system needed to coordinate tasks for different clients while keeping data boundaries, resource consumption and external actions under explicit control.
 
-The platform's documented architecture combines:
+## What I built
 
-- **Scoped memory:** persistent context keyed to operator/client scope, not a shared unfiltered chat history.
-- **Usage governance:** per-agent token budgets, circuit breakers, call-level audit records.
-- **Task orchestration:** sequential job execution and distinct operator workflows.
-- **Approval-gated execution:** allowlisted adapters, atomic claims and no blind retry of failed external actions.
-- **Operational observability:** deterministic Python agents for infrastructure, code-quality, registry status and morning digests.
-- **Multi-tenant separation:** client portal identity and storage boundaries.
+Control-Room combined two execution paths:
 
-### Execution boundary
+| Path | Execution | Boundary |
+|---|---|---|
+| Client work | Scoped request → sequential queue → specialist processing → review | Client-specific records and usage limits |
+| Operator work | Goal → plan → read-only tools → synthesis → verification | Any external action becomes a proposal requiring separate approval |
+
+The engine used a bounded planning loop, a restricted tool menu and a verification stage. It recorded tool evidence and distinguished results that passed verification from results that required attention. Memory was persisted by scope rather than relying on unfiltered conversation history.
+
+## A specific engineering decision: authority is separate from reasoning
 
 ```text
-OWNER GOAL
-    |
-    v
-PLAN → READ-ONLY ACTIONS → VERIFY
-                         |
-            +------------+-----------+
-            |                        |
-        DELIVERABLE            EXTERNAL ACTION
-        + MEMORY                 PROPOSAL
-                                     |
-                                     v
-                              OWNER APPROVAL
-                                     |
-                                     v
-                              GATED EXECUTOR
-                                     |
-                                     v
-                               AUDIT RECORD
+GOAL
+  ↓
+PLAN → BOUNDED TOOL CALLS → VERIFY
+                         ↙       ↘
+                    DELIVERABLE   ACTION PROPOSAL
+                                       ↓
+                                 HUMAN APPROVAL
+                                       ↓
+                                ALLOWLISTED EXECUTOR
+                                       ↓
+                                  AUDIT RECORD
 ```
 
-**Key decision:** An LLM can propose an external change; it cannot approve its own proposal. The executor applies a separate allowlist and state transition.
+An agent could draft or propose an external action; the executor separately checked approval status, enabled adapter type and forbidden categories. The initial enabled notification adapter was narrowly scoped to the operator. Other outbound integrations were deliberately not assumed to be active.
 
-### Evidence and constraints
+## Another decision: avoid duplicate external actions
 
-Historical source and operations notes describe a Node.js / Express / PostgreSQL / Redis platform hosted on AWS, alongside Python health and maintenance tools. The July 2026 operations journal records local and live health checks, unit tests and Telegram delivery evidence.
+Before invoking an adapter, the executor used a PostgreSQL transaction and `SELECT ... FOR UPDATE` to claim an approved proposal and persist an `executing` state. Competing attempts could then observe the claim and back off.
 
-These records demonstrate historical implementation and testing, **not** current production availability. Later infrastructure moved toward Cloudflare Workers and D1, with ongoing reconciliation of historic capabilities. No public paid-user traction is claimed here.
+**Trade-off:** this favors avoiding duplicate effects over automatic retries. A process crash after the claim, or after an external effect but before finalization, still requires reconciliation. It is not a universal exactly-once delivery guarantee.
 
-### Lessons that carry into RACAI
+## What the implementation does and does not show
 
-1. Separate model reasoning from permission to act.
-2. Preserve source provenance and verifiable state transitions.
-3. Require tenant isolation and bounded resource usage.
-4. Treat code, tests, release, and customer acceptance as distinct evidence levels.
-5. Build operational continuity before claiming autonomous operations.
+The private source includes the planning engine, scoped-memory implementation, operator interface and gated executor. Historical operations records describe local and live health checks, tests and Telegram delivery. Those records support the existence of a working historical system; they are not evidence that every historical capability is deployed in the current RACAI runtime.
 
-### References
+There is no claim here of independently verified paid-customer traction, general production readiness or novel model training.
 
-- [Current RACAI company site](https://rac-ai.com/)
-- [Founder profile](https://github.com/Ishaipita)
-- Original internal engineering repository remains private. Public details above are intentionally limited to architecture and previously documented design decisions.
+## What I took forward
+
+- Treat the model as a contributor to decisions, not the authority for consequential actions.
+- Keep state and access boundaries outside the model's conversation.
+- Define failure states and recovery behavior before broadening autonomy.
+- Judge completion from evidence, not from an agent's self-report.
+
+The later [RACAI Operator](./racai-operator.md) explores related problems on a different runtime.
 
 ---
 
-**Ishai Pita** / Founder & Systems Architect · RACAI
+*Internal code remains private. This case study describes selected engineering decisions without publishing credentials, customer records or proprietary configuration.*
