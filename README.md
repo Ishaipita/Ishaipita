@@ -25,7 +25,7 @@ Work intake, persistent state, approval flows, audit records and scheduled opera
 [Architecture and implementation notes →](./case-studies/racai-operator.md)
 
 ### [Control-Room](./case-studies/control-room.md)
-**Agent execution and governance · Node.js, PostgreSQL, Redis**
+**Agent execution and governance · Node.js, PostgreSQL**
 
 A multi-tenant engineering project with a bounded plan–act–verify process, scoped memory and a separate approval-gated executor for external actions.
 
