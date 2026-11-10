@@ -1,7 +1,7 @@
 # Control-Room
 *Engineering case study · Agent execution and governance*
 
-**Stack:** Node.js / Express, PostgreSQL, Redis, Python, AI model tooling  
+**Stack:** Node.js / Express, PostgreSQL, Python, AI model tooling
 **Scope:** Multi-tenant task processing and operator-controlled agent execution
 
 [← Portfolio](../README.md)
