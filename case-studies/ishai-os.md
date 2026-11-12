@@ -2,7 +2,7 @@
 *Engineering case study · Local-first personal agent and verifiable execution*
 
 **Stack:** Python, SQLite, GitHub API, local model experiments  
-**Status:** Active development; controlled verification, not production or general autonomy.
+**Status:** Active development; owner-observed, bounded read-only verification, not production or general autonomy.
 
 [← Portfolio](../README.md)
 
@@ -35,6 +35,20 @@ REPORT VERIFIED / BLOCKED / FAILED
 ```
 
 A prepared proposal is not a completed external action. A successful local test is not a production deployment. Historical evidence must remain traceable without being mistaken for the latest state.
+
+## Field note — 12 November 2026
+
+The acceptance request was written in Hebrew and asked the local Control Room to check the **current** state of a GitHub pull request, validate two named artifacts from a specified **historical** CI run, and preserve the result with sources.
+
+| Check | Observation | What it does *not* prove |
+|---|---|---|
+| Pull request | A fresh authenticated API read returned a merged state with an observation timestamp | The CI run belongs to the merged head |
+| Artifact integrity | Two ZIP archives were downloaded and their SHA-256 values matched the corresponding upload records in the CI job log | Hash matching alone establishes provenance or release readiness |
+| Authorization | This read-only diagnostic created no write approval or pull-request proposal | Every possible request is safely classified |
+| Memory | A new, source-attributed record superseded an earlier stale observation without deleting history | General long-term personal understanding |
+| Execution | A verified read result was distinguished from a historical proposal that never left an outbox | General autonomous action or production uptime |
+
+The artifacts and runtime state are private. These observations are a controlled engineering demonstration and are **not presented as an independently reproducible public audit**.
 
 ## What the demonstration establishes
 
