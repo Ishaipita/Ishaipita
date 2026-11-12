@@ -13,9 +13,16 @@
 
 I build software at the intersection of AI, backend systems and products. Much of my work has focused on a practical question: **what does it take for software to carry work through to a result that can be checked?**
 
-I have developed systems for agent coordination, persistent state, permissions, external tools and operational review. RACAI is my continuing work in this area.
+I have developed systems for agent coordination, persistent state, permissions, external tools and operational review. My work spans personal agent infrastructure, business operations, developer tooling and creative production. RACAI is my continuing work in this area.
 
 ## Selected work
+
+### ISHAI OS — Personal agent & execution infrastructure
+**Python · local-first orchestration · durable memory · approval-gated tools**
+
+An ongoing personal AI systems project connecting task planning, source-attributed memory, permission boundaries and verifiable tool execution. The engineering focus is on turning a natural-language request into a bounded, auditable result — including failure handling and recovery.
+
+**Current scope:** demonstrated read-only GitHub verification and evidence-backed memory continuity in a controlled workflow. Broader autonomy, continuous availability and production-grade deployment are not claimed. The source repository and personal state remain private.
 
 ### [RACAI Operator](./case-studies/racai-operator.md)
 **Internal operating software · TypeScript, Cloudflare Workers, D1**
@@ -54,7 +61,7 @@ A reference-based production workflow with versioned assets, spending controls a
 
 ## Engineering approach
 
-My approach combines practical product development with disciplined systems engineering: clear state transitions, explicit authorization, testable execution paths and evidence-based review.
+My approach combines practical product development with disciplined systems engineering: clear state transitions, explicit authorization, testable execution paths and evidence-based review. Across projects, I separate proposed work, tested code and deployed results; keep credentials and personal state out of public repositories; and use source-linked validation before making technical claims.
 
 The case studies document selected architectural decisions and implementation approaches. Internal source repositories remain private.
 
