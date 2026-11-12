@@ -18,6 +18,8 @@ This is a deliberately narrow integration, not a claim that the agent can browse
 
 ## The engineering principle
 
+![ISHAI OS execution contract: intent, authority, execution, verification](../assets/ishai-execution-contract.svg)
+
 ```text
 USER REQUEST
     |
