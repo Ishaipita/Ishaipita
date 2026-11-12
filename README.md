@@ -24,6 +24,8 @@ An ongoing personal AI systems project connecting task planning, source-attribut
 
 **Current scope:** demonstrated read-only GitHub verification and evidence-backed memory continuity in a controlled workflow. Broader autonomy, continuous availability and production-grade deployment are not claimed. The source repository and personal state remain private.
 
+[Read the engineering case study →](./case-studies/ishai-os.md)
+
 ### [RACAI Operator](./case-studies/racai-operator.md)
 **Internal operating software · TypeScript, Cloudflare Workers, D1**
 
