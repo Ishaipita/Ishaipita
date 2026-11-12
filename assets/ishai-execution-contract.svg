@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="680" viewBox="0 0 1280 680" role="img" aria-labelledby="title desc">
+<title id="title">ISHAI OS execution contract</title>
+<desc id="desc">Four bounded stages: Intent, Authorization, Execution, Verification. Prepared does not mean verified.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1C2A22"/><stop offset="1" stop-color="#0D1513"/></linearGradient>
+<linearGradient id="tone" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#D87955"/><stop offset="1" stop-color="#E9B296"/></linearGradient>
+</defs>
+<rect width="1280" height="680" rx="20" fill="url(#bg)"/>
+<rect x="24" y="24" width="1232" height="632" rx="15" fill="none" stroke="#435649"/>
+<g font-family="Inter,Arial,sans-serif">
+<text x="65" y="81" font-size="20" font-weight="600" letter-spacing="3" fill="#C1C8B9">ISHAI OS / ENGINEERING FIELD NOTE 01</text>
+<line x1="64" y1="110" x2="1214" y2="110" stroke="#4C6153" stroke-width="2"/>
+<text x="65" y="182" font-size="56" font-weight="750" fill="#F5F2EA">An execution contract.</text>
+<text x="66" y="222" font-size="23" fill="#ACB8AA">Keep permission, action and evidence separate from a workflow's status.</text>
+</g>
+<g font-family="Inter,Arial,sans-serif">
+<g transform="translate(65 286)"><rect width="263" height="202" rx="13" fill="#27372E" stroke="#607365"/><text x="25" y="44" font-size="21" fill="#E07754" font-weight="700">01</text><text x="25" y="101" font-size="32" fill="#F5F2EA" font-weight="700">INTENT</text><text x="25" y="147" font-size="18" fill="#AEBCAE">What was requested</text></g>
+<g transform="translate(355 286)"><rect width="263" height="202" rx="13" fill="#27372E" stroke="#607365"/><text x="25" y="44" font-size="21" fill="#E07754" font-weight="700">02</text><text x="25" y="101" font-size="30" fill="#F5F2EA" font-weight="700">AUTHORITY</text><text x="25" y="147" font-size="18" fill="#AEBCAE">What is permitted</text></g>
+<g transform="translate(645 286)"><rect width="263" height="202" rx="13" fill="#27372E" stroke="#607365"/><text x="25" y="44" font-size="21" fill="#E07754" font-weight="700">03</text><text x="25" y="101" font-size="30" fill="#F5F2EA" font-weight="700">EXECUTION</text><text x="25" y="147" font-size="18" fill="#AEBCAE">What actually ran</text></g>
+<g transform="translate(935 286)"><rect width="279" height="202" rx="13" fill="#27372E" stroke="#D87955"/><text x="25" y="44" font-size="21" fill="#E07754" font-weight="700">04</text><text x="25" y="101" font-size="28" fill="#F5F2EA" font-weight="700">VERIFICATION</text><text x="25" y="147" font-size="18" fill="#AEBCAE">What evidence confirms</text></g>
+<g stroke="#D87955" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M328 386h24m-8-8 8 8-8 8"/><path d="M618 386h24m-8-8 8 8-8 8"/><path d="M908 386h24m-8-8 8 8-8 8"/></g>
+</g>
+<line x1="65" y1="541" x2="1214" y2="541" stroke="#4C6153"/>
+<text x="65" y="594" font-family="Inter,Arial,sans-serif" font-size="29" font-weight="650" fill="#F5F2EA">A finished workflow</text>
+<text x="382" y="595" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="750" fill="#E07754">≠</text>
+<text x="429" y="594" font-family="Inter,Arial,sans-serif" font-size="29" font-weight="650" fill="#F5F2EA">a verified external result.</text>
+<text x="1214" y="631" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="16" fill="#AEBCAE">BOUNDED DEMONSTRATION / NOT GENERAL AUTONOMY</text>
+</svg>
