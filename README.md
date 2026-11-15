@@ -7,7 +7,7 @@
 
 Building systems that are **observable, recoverable and verifiable**.
 
-[**Engineering work**](#selected-engineering-work) &nbsp;·&nbsp; [**Other projects**](#additional-projects-and-research) &nbsp;·&nbsp; [**Technical toolkit**](#technical-toolkit) &nbsp;·&nbsp; [**LinkedIn**](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/)
+[**Selected work**](#selected-engineering-work) &nbsp;·&nbsp; [**Runnable Python demo**](./demos/reliable-execution/README.md) &nbsp;·&nbsp; [**Technical toolkit**](#technical-toolkit) &nbsp;·&nbsp; [**LinkedIn / Contact**](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/)
 
 </div>
 
@@ -15,7 +15,9 @@ Building systems that are **observable, recoverable and verifiable**.
 
 I am an independent software builder focused on Linux application operations, backend integrations, cloud infrastructure and approval-gated automation. I care about what happens **after** software runs: retries, failure states, auditability and proof of outcomes.
 
-**Seeking early-career opportunities in** Infrastructure Engineering, Systems Integration, Cloud Operations and Backend Automation — with room for hands-on debugging and technical mentorship.
+**Open to early-career roles in** Infrastructure Engineering, Cloud Operations, Systems Integration and Backend Automation. I bring hands-on independent project work and am looking to contribute to a team with rigorous engineering practices and mentorship.
+
+**Start here:** [Run the public Python/SQLite reliability demo](./demos/reliable-execution/README.md) · [Inspect an AI execution case study](./case-studies/ishai-os.md) · [Connect on LinkedIn](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/).
 
 ## Selected engineering work
 
