@@ -1,13 +1,34 @@
-# Ishai Chertkoff
-**Infrastructure & automation engineering · Linux · Python · Cloud · backend systems**
+<div align="center">
 
-I build software that makes complex work **observable, recoverable and verifiable**. My independent engineering projects span Linux application operations, cloud services, backend integration, durable workflow state and approval-gated AI tools.
+<img src="./assets/systems-banner.svg" alt="Ishai Chertkoff — infrastructure, automation and systems engineering" width="100%" />
 
-**Open to early-career roles:** Infrastructure Engineering · Systems Integration · Cloud Operations · Backend Automation. I value hands-on debugging, technical mentorship and evidence-based engineering.
+### ISHAI CHERTKOFF
+**Infrastructure & Automation Engineering · Linux · Python · Cloud · Backend Systems**
 
-[Engineering case studies](#selected-engineering-work) · [RACAI](https://rac-ai.com/) · [LinkedIn](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/)
+Building systems that are **observable, recoverable and verifiable**.
+
+[**Engineering work**](#selected-engineering-work) &nbsp;·&nbsp; [**Other projects**](#additional-projects-and-research) &nbsp;·&nbsp; [**Technical toolkit**](#technical-toolkit) &nbsp;·&nbsp; [**LinkedIn**](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/)
+
+</div>
+
+---
+
+I am an independent software builder focused on Linux application operations, backend integrations, cloud infrastructure and approval-gated automation. I care about what happens **after** software runs: retries, failure states, auditability and proof of outcomes.
+
+**Seeking early-career opportunities in** Infrastructure Engineering, Systems Integration, Cloud Operations and Backend Automation — with room for hands-on debugging and technical mentorship.
 
 ## Selected engineering work
+
+| Project | Engineering problem | Stack | Evidence |
+|:--|:--|:--|:--|
+| **[RACAI Operator](./case-studies/racai-operator.md)** | Durable work state, approvals and traceability across interfaces | TypeScript · Cloudflare Workers · D1 | [Design & implementation notes](./case-studies/racai-operator.md) |
+| **[Control-Room](./case-studies/control-room.md)** | Bounded execution, tenant boundaries and duplicate-action protection | Node.js · PostgreSQL · Redis | [Architecture & concurrency decision](./case-studies/control-room.md) |
+| **[ISHAI OS](./case-studies/ishai-os.md)** | Verify external actions against actual sources instead of trusting agent claims | Python · SQLite · GitHub API | [Controlled verification case](./case-studies/ishai-os.md) |
+
+<details>
+<summary><strong>Explore the engineering decisions behind these projects</strong></summary>
+
+
 
 ### [RACAI Operator — durable work and authorization](./case-studies/racai-operator.md)
 **TypeScript · Cloudflare Workers · D1 · Telegram / web interfaces**
@@ -36,6 +57,8 @@ I build software that makes complex work **observable, recoverable and verifiabl
 
 **Status:** Bounded demonstration, not general autonomy or a continuously deployed service.
 
+</details>
+
 ## Additional projects and research
 
 The selected projects above are the most relevant evidence for infrastructure and systems engineering roles. My wider work also includes:
@@ -47,6 +70,10 @@ The selected projects above are the most relevant evidence for infrastructure an
 - **Theta–Erdős — mathematical research experiments:** symbolic and numerical exploration with explicit verification and uncertainty boundaries.
 
 These projects are intentionally included for breadth, while the three case studies above provide the clearest technical depth. Source access and implementation maturity vary by project.
+
+## Engineering principles
+
+> A proposed action is not an executed action. A passing test is not a deployed service. A completed task needs evidence.
 
 ## How I work
 
@@ -60,6 +87,10 @@ These projects are intentionally included for breadth, while the three case stud
 **Infrastructure:** Linux / Ubuntu · AWS EC2 / S3 / IAM · Cloudflare Workers / D1 / R2 · Docker · PM2  
 **Software:** Python · TypeScript · JavaScript · Node.js · Express · REST APIs · webhooks  
 **Data & delivery:** PostgreSQL · Redis · Git · GitHub Actions · CI/CD · task queues
+
+## Availability and contact
+
+Based in Portugal with EU work authorization; open to relevant opportunities in Israel. For hiring conversations, connect through [LinkedIn](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/).
 
 ## Links
 
