@@ -61,13 +61,13 @@ I am an independent software builder focused on Linux application operations, ba
 
 ## Runnable engineering demonstration
 
-**[Reliable Execution — Python / SQLite](./demos/reliable-execution/README.md)** is a small, public, dependency-free state-machine example with 11 unit tests covering concurrent claims, invalid transitions, persistence and uncertain outcomes. It is intentionally separate from the historical RACAI systems; the local receipt is not independently authenticated.
+**[Reliable Execution — Python / SQLite](./demos/reliable-execution/README.md)** is a small, public, dependency-free state-machine example with 11 unit tests covering concurrent claims, invalid transitions, persistence and uncertain outcomes. It is a focused example of the concurrency and state-machine problems addressed in the wider engineering work.
 
 [Read the code](./demos/reliable-execution/reliable.py) · [Review the tests](./demos/reliable-execution/tests/test_reliable.py) · [Run instructions](./demos/reliable-execution/README.md)
 
 ## Additional projects and research
 
-The selected projects above are the most relevant evidence for infrastructure and systems engineering roles. My wider work also includes:
+The featured projects offer a quick entry point into a wider engineering history. My wider work also includes:
 
 - **B-Sure — applied AI credit-review prototype:** Node.js and server-sent events; a staged document, financial-analysis, research, scoring and follow-up workflow with human review. Proof of concept, not a deployed lending product.
 - **NYRA — generative media production tooling:** Python workflows for versioned creative assets, preflight checks, cost controls and iteration informed by recorded failures.
@@ -86,7 +86,17 @@ These projects are intentionally included for breadth, while the three case stud
 - Investigate failure states, retries and duplicate requests before claiming success.
 - Keep durable state, authorization and audit evidence outside the model conversation.
 - Use GitHub pull requests, CI and source-linked checks to distinguish implemented, tested and deployed work.
-- Document limitations clearly; private repositories are not presented as publicly reproducible code.
+- Document limitations clearly; public technical documentation links to representative engineering work.
+
+## Technology landscape
+
+**Cloud & infrastructure:** AWS (EC2, S3, IAM), Google Cloud (platform integration and operational research), Cloudflare (Workers, D1, R2, Workers AI), Linux/Ubuntu, Docker, GitHub Actions, CI/CD, PM2.
+
+**Backend & integration:** Python, TypeScript, JavaScript, Node.js, Express, REST APIs, webhooks, PostgreSQL, Redis, SQLite, task queues, MCP and OAuth.
+
+**AI engineering & orchestration:** agent workflows, model/tool routing, structured state, approvals, memory, offline evaluations and recovery. Research and architectural evaluations include LangGraph, Temporal, vLLM, SGLang, Triton and Langfuse. These technologies span implementation, integration and technical investigation rather than implying identical depth with every tool.
+
+**Observability & operations:** logging, tracing design, health checks, release verification and performance investigation. Grafana is an area of exposure to confirm against source before listing as hands-on implementation.
 
 ## Technical toolkit
 
@@ -96,7 +106,7 @@ These projects are intentionally included for breadth, while the three case stud
 
 ## Availability and contact
 
-Based in Portugal with EU work authorization; open to relevant opportunities in Israel. For hiring conversations, connect through [LinkedIn](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/).
+For professional opportunities and technical collaboration, connect through [LinkedIn](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/).
 
 ## Links
 
