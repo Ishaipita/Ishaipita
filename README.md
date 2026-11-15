@@ -1,80 +1,54 @@
-<div align="center">
+# Ishai Chertkoff
+**Infrastructure & automation engineering · Linux · Python · Cloud · backend systems**
 
-<img src="./assets/systems-banner.svg" width="100%" alt="Systems That Finish The Work — Ishai Chertkoff engineering portfolio." />
+I build software that makes complex work **observable, recoverable and verifiable**. My independent engineering projects span Linux application operations, cloud services, backend integration, durable workflow state and approval-gated AI tools.
 
-### ISHAI CHERTKOFF
-**Independent software builder · AI systems & product engineering**
+**Open to early-career roles:** Infrastructure Engineering · Systems Integration · Cloud Operations · Backend Automation. I value hands-on debugging, technical mentorship and evidence-based engineering.
 
-[Selected work](#selected-work) &nbsp;·&nbsp; [RACAI](https://rac-ai.com/)
+[Engineering case studies](#selected-engineering-work) · [RACAI](https://rac-ai.com/) · [LinkedIn](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/)
 
-</div>
+## Selected engineering work
 
----
+### [RACAI Operator — durable work and authorization](./case-studies/racai-operator.md)
+**TypeScript · Cloudflare Workers · D1 · Telegram / web interfaces**
 
-I build software at the intersection of AI, backend systems and products. Much of my work has focused on a practical question: **what does it take for software to carry work through to a result that can be checked?**
+**Challenge:** Work initiated through chat needs persistent state, explicit approval and an audit trail rather than an unverified “done” message.
 
-I have developed systems for agent coordination, persistent state, permissions, external tools and operational review. My work spans personal agent infrastructure, business operations, developer tooling and creative production. RACAI is my continuing work in this area.
+**Engineering approach:** Structured task and proposal records, owner approval/rejection boundaries, scheduled execution and operational evidence. Tests, merge status and live deployment are treated as separate claims.
 
-## Selected work
+**Status:** Internal platform; code and operational state remain private. The linked case study documents design, not independently verified uptime or commercial adoption.
 
-### ISHAI OS — Personal agent & execution infrastructure
-**Python · local-first orchestration · durable memory · approval-gated tools**
+### [Control-Room — controlled agent execution](./case-studies/control-room.md)
+**Node.js · Express · PostgreSQL · Redis**
 
-An ongoing personal AI systems project connecting task planning, source-attributed memory, permission boundaries and verifiable tool execution. The engineering focus is on turning a natural-language request into a bounded, auditable result — including failure handling and recovery.
+**Challenge:** Multi-tenant workflows require scoped data, bounded tool access and protection against concurrent duplicate action attempts.
 
-**Current scope:** demonstrated read-only GitHub verification and evidence-backed memory continuity in a controlled workflow. Broader autonomy, continuous availability and production-grade deployment are not claimed. The source repository and personal state remain private.
+**Engineering decision:** Separate an agent's proposal from an allowlisted executor. A PostgreSQL transaction with `SELECT ... FOR UPDATE` claims approved work before adapter invocation.
 
-[Read the engineering case study →](./case-studies/ishai-os.md)
+**Status:** Historical implementation. This does not claim provider-level exactly-once delivery.
 
-### [RACAI Operator](./case-studies/racai-operator.md)
-**Internal operating software · TypeScript, Cloudflare Workers, D1**
+### [ISHAI OS — source-backed read-only verification](./case-studies/ishai-os.md)
+**Python · SQLite · GitHub API**
 
-Work intake, persistent state, approval flows, audit records and scheduled operations. The work combines application engineering, release discipline and operational design.
+**Challenge:** An agent's assertion that an external task is complete is not evidence that it happened.
 
-[Architecture and implementation notes →](./case-studies/racai-operator.md)
+**Controlled demonstration:** Inspect a current GitHub pull request, validate digests of historical CI artifacts and store timestamped, source-attributed results without generating an unauthorized write proposal.
 
-### [Control-Room](./case-studies/control-room.md)
-**Agent execution and governance · Node.js, PostgreSQL**
+**Status:** Bounded demonstration, not general autonomy or a continuously deployed service.
 
-A multi-tenant engineering project with a bounded plan–act–verify process, scoped memory and a separate approval-gated executor for external actions.
+## How I work
 
-[Engineering case study →](./case-studies/control-room.md)
+- Investigate failure states, retries and duplicate requests before claiming success.
+- Keep durable state, authorization and audit evidence outside the model conversation.
+- Use GitHub pull requests, CI and source-linked checks to distinguish implemented, tested and deployed work.
+- Document limitations clearly; private repositories are not presented as publicly reproducible code.
 
-### B-Sure
-**Applied AI prototype · Node.js, SSE**
+## Technical toolkit
 
-A five-stage workflow for reviewing SME credit applications: document extraction, financial analysis, external research, scoring and follow-up questions. Built as a proof of concept with explainable outputs and human review.
+**Infrastructure:** Linux / Ubuntu · AWS EC2 / S3 / IAM · Cloudflare Workers / D1 / R2 · Docker · PM2  
+**Software:** Python · TypeScript · JavaScript · Node.js · Express · REST APIs · webhooks  
+**Data & delivery:** PostgreSQL · Redis · Git · GitHub Actions · CI/CD · task queues
 
-### NYRA
-**Generative media tooling · Python**
+## Links
 
-A reference-based production workflow with versioned assets, spending controls and reproducible preflight checks. Iterations were informed by recorded generation failures and image-consistency tests.
-
-<details>
-<summary>Earlier work and research</summary>
-
-**Jarvis** — experiments in multi-agent coordination and financial research tooling.
-
-**Theta–Erdős** — symbolic and numerical exploration using independent verification and explicit confidence classifications.
-
-
-
-</details>
-
-## Engineering approach
-
-My approach combines practical product development with disciplined systems engineering: clear state transitions, explicit authorization, testable execution paths and evidence-based review. Across projects, I separate proposed work, tested code and deployed results; keep credentials and personal state out of public repositories; and use source-linked validation before making technical claims.
-
-The case studies document selected architectural decisions and implementation approaches. Internal source repositories remain private.
-
-## Technologies
-
-TypeScript · JavaScript · Python · Node.js · Cloudflare Workers · D1 · PostgreSQL · Redis · AWS · GitHub Actions · REST APIs
-
----
-
-<div align="center">
-
-[RACAI](https://rac-ai.com/) &nbsp;·&nbsp; [Control-Room case study](./case-studies/control-room.md) &nbsp;·&nbsp; [GitHub profile](https://github.com/Ishaipita)
-
-</div>
+[GitHub](https://github.com/Ishaipita) · [LinkedIn](https://www.linkedin.com/in/ishai-chertkoff-b252183b3/) · [RACAI](https://rac-ai.com/) · [RACAI Operator case study](./case-studies/racai-operator.md) · [Control-Room case study](./case-studies/control-room.md) · [ISHAI OS case study](./case-studies/ishai-os.md)
