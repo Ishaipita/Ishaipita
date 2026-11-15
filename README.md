@@ -36,6 +36,18 @@ I build software that makes complex work **observable, recoverable and verifiabl
 
 **Status:** Bounded demonstration, not general autonomy or a continuously deployed service.
 
+## Additional projects and research
+
+The selected projects above are the most relevant evidence for infrastructure and systems engineering roles. My wider work also includes:
+
+- **B-Sure — applied AI credit-review prototype:** Node.js and server-sent events; a staged document, financial-analysis, research, scoring and follow-up workflow with human review. Proof of concept, not a deployed lending product.
+- **NYRA — generative media production tooling:** Python workflows for versioned creative assets, preflight checks, cost controls and iteration informed by recorded failures.
+- **RAC-stack — local agent runtime and control surface:** Python-based local operations and recovery experiments. Development work; private source, with no claim of production-grade availability.
+- **Jarvis — earlier agent coordination experiments:** historical exploratory work, not an active commercial offering.
+- **Theta–Erdős — mathematical research experiments:** symbolic and numerical exploration with explicit verification and uncertainty boundaries.
+
+These projects are intentionally included for breadth, while the three case studies above provide the clearest technical depth. Source access and implementation maturity vary by project.
+
 ## How I work
 
 - Investigate failure states, retries and duplicate requests before claiming success.
