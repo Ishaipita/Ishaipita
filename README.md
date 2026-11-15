@@ -59,6 +59,12 @@ I am an independent software builder focused on Linux application operations, ba
 
 </details>
 
+## Runnable engineering demonstration
+
+**[Reliable Execution — Python / SQLite](./demos/reliable-execution/README.md)** is a small, public, dependency-free state-machine example with 11 unit tests covering concurrent claims, invalid transitions, persistence and uncertain outcomes. It is intentionally separate from the historical RACAI systems; the local receipt is not independently authenticated.
+
+[Read the code](./demos/reliable-execution/reliable.py) · [Review the tests](./demos/reliable-execution/tests/test_reliable.py) · [Run instructions](./demos/reliable-execution/README.md)
+
 ## Additional projects and research
 
 The selected projects above are the most relevant evidence for infrastructure and systems engineering roles. My wider work also includes:
